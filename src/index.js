@@ -45,18 +45,16 @@ class Clock extends React.Component {
       let sec = Now.getSeconds()*1;
 
       return (
-          <div className='template'>
-              <div className='time'>
-                <h2>{this.tenthDigit(hour)}</h2>
-                <h2>{this.firstDigit(hour)}</h2>
-                <h1>:</h1>
-                <h2>{this.tenthDigit(min)}</h2>
-                <h2>{this.firstDigit(min)}</h2>
-                <h1>:</h1>
-                <h2>{this.tenthDigit(sec)}</h2>
-                <h2>{this.firstDigit(sec)}</h2>
-              </div>
-          </div>
+        <div className='time'>
+          <h2>{this.tenthDigit(hour)}</h2>
+          <h2>{this.firstDigit(hour)}</h2>
+          <h2>:</h2>
+          <h2>{this.tenthDigit(min)}</h2>
+          <h2>{this.firstDigit(min)}</h2>
+          <h2>:</h2>
+          <h2>{this.tenthDigit(sec)}</h2>
+          <h2>{this.firstDigit(sec)}</h2>
+        </div>
       );
     }
 }
@@ -103,11 +101,13 @@ class LoginControl extends React.Component {
     } else {
       return (
         <div>
-          <form onSubmit = {this.handleLogin} className = 'logout'>
-            <input type = 'submit' value = 'LOGOUT' />
-          </form>
           <h1>Welcome <br/> {this.state.value}</h1>
-          <Clock />
+          <div className='Above'>
+            <Clock />
+            <form onSubmit = {this.handleLogin} className = 'logout'>
+              <input type = 'submit' value = 'LOGOUT' />
+            </form>
+          </div>
         </div>
       )
     }
