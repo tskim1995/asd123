@@ -1,0 +1,2 @@
+.time{display:grid;grid-template:1fr/repeat(8,1fr);position:relative;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:auto;border:2px solid #8b0000;background-color:#ff8}h1{font-size:50px;text-align:center}h2{font-family:serif;color:#000;margin:0}.loginControl{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:auto}.loginControl,label{position:relative}.Above{position:absolute;z-index:10;top:0;right:0}
+/*# sourceMappingURL=main.a249fabe.chunk.css.map */
